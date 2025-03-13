@@ -1,0 +1,42 @@
+:root {
+  font-size: 10px;
+  --main-color: #683c11;
+  --first-color: #ca9e67;
+  --black: #131313;
+  --bg: rgb(40, 37, 37);
+  --border: 0.1rem solid rgba(255, 255, 266, 0.3);
+}
+
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateX(-300px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(20px);
+    transform: translateX(-300px);
+  }
+}
+
+@keyframes image-animation {
+  0% {
+    background-image: url(../assets/picture/cha-leite-quente-tailandes.jpg);
+    background-size: cover;
+  }
+  40%,
+  50% {
+    background-image: url(../assets/picture/coffe.jpg);
+    background-size: cover;
+  }
+  100% {
+    background-image: url(../assets/picture/cup-hot-coffee-with-cookies-table-lights.jpg);
+    background-size: cover;
+  }
+}
